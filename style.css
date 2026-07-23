@@ -111,6 +111,25 @@ a:hover { border-bottom-color: var(--viridian); }
 
 .hero { padding: 4.5rem 0 0; }
 
+.hero .wrap {
+  display: grid;
+  grid-template-columns: var(--margin-col) minmax(0, var(--measure));
+  gap: 3rem;
+  align-items: start;
+}
+
+.portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  margin-top: 0.75rem;
+  background: var(--wash);
+}
+
 .hero-name {
   font-family: var(--serif);
   font-weight: 600;
@@ -394,6 +413,8 @@ p { margin: 0 0 1.1rem; }
   .topbar .wrap { padding-top: 0.8rem; padding-bottom: 0.8rem; gap: 0.5rem; }
   .topnav { gap: 1rem; font-size: 0.72rem; }
   .hero { padding-top: 3rem; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 1.4rem; }
+  .portrait { width: 96px; margin-top: 0; }
   .row {
     grid-template-columns: 1fr;
     gap: 0.9rem;
