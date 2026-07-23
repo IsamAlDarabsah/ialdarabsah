@@ -3,8 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research — Firstname Lastname</title>
-<meta name="description" content="Fractional dynamical systems, mathematical biology, numerical analysis.">
+<title>Research — Dr. Isam Al-Darabsah</title>
+<meta name="description" content="Delay differential equations, mathematical biology, nonlinear dynamics.">
+<meta name="author" content="Isam Al-Darabsah">
+<meta property="og:title" content="Research — Dr. Isam Al-Darabsah">
+<meta property="og:description" content="Delay differential equations, mathematical biology, nonlinear dynamics.">
+<meta property="og:type" content="profile">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet">
@@ -21,7 +25,7 @@
 
 <header class="topbar">
   <div class="wrap">
-    <a class="mark" href="index.html">Firstname Lastname</a>
+    <a class="mark" href="index.html">Isam Al-Darabsah</a>
     <nav class="topnav">
       <a href="index.html">About</a>
       <a href="research.html" aria-current="page">Research</a>
@@ -39,57 +43,66 @@
       <div class="margin">Overview</div>
       <div class="column">
         <h2>Research</h2>
-        <p class="lede">Three strands, with a common thread: what happens to a
-        dynamical system when the derivative is replaced by a non-local
-        operator, and how to compute the answer reliably.</p>
+        <p class="lede">A single question runs through most of what I do: what
+        does a delay change? Introducing a lag into an otherwise well-understood
+        model can destabilise a steady state, create oscillations that were not
+        there before, and shift the threshold between persistence and
+        extinction.</p>
       </div>
     </section>
 
     <section class="row">
-      <div class="margin">01<span class="sub">ongoing</span></div>
+      <div class="margin">Themes</div>
       <div class="column">
+
         <div class="area">
-          <h3>Fractional eco-epidemiological systems</h3>
-          <p>Caputo-derivative predator&ndash;prey models carrying two competing
-          disease strains in the prey population, with a generalised Holling
-          response and herd-behaviour exponent $k$. The analysis covers
-          positivity and boundedness, classification of strain-specific and
-          coexistence equilibria, basic reproduction numbers
-          $\mathcal{R}_{0,1}$ and $\mathcal{R}_{0,2}$, and local stability via
-          Matignon's condition $|\arg(\lambda)| > \alpha\pi/2$. The open
-          problem I keep returning to is the non-Lipschitz singularity at the
-          origin when $0 &lt; k &lt; 1$.</p>
-          <p class="keys">Caputo derivative &middot; Matignon condition &middot; Mittag-Leffler decay &middot; strain competition</p>
+          <h3>Delay models in population biology and epidemiology</h3>
+          <p>Maturation, latency, and incubation all enter naturally as delays.
+          I study how they reshape thresholds such as the basic reproduction
+          number $\mathcal{R}_0$, when they induce Hopf bifurcations, and what
+          the resulting oscillations mean for control strategies. Stage
+          structure, spatial patches, and harvesting sit inside this theme.</p>
+          <p class="keys">delay differential equations &middot; Hopf bifurcation &middot; basic reproduction number &middot; stage structure</p>
         </div>
 
         <div class="area">
-          <h3>Tumour&ndash;immune&ndash;drug reaction&ndash;diffusion models</h3>
-          <p>A two-dimensional spatial Caputo model coupling tumour, effector
-          immune, and drug concentrations. Work here covers nondimensionalisation,
-          L1 time-stepping, and the qualitative behaviour of treatment
-          protocols under memory effects.</p>
-          <p class="keys">L1 scheme &middot; nondimensionalisation &middot; oncology</p>
+          <h3>Within-host infection and immune response</h3>
+          <p>Models of the interaction between a pathogen and the immune system,
+          where the response to an antigen is not instantaneous. Distributed
+          delays are more realistic here than discrete ones, and the analytical
+          question is whether global stability results survive when the kernel
+          is left general rather than fixed in advance.</p>
+          <p class="keys">distributed delay &middot; global stability &middot; Lyapunov functionals &middot; immunology</p>
         </div>
 
         <div class="area">
-          <h3>Numerical methods for nonlinear PDEs</h3>
-          <p>Laplace residual power series methods for fifth-order
-          Kawahara-type equations with multiple quadratic nonlinearities, and
-          sinc-collocation schemes combined with weighted shifted
-          Gr&uuml;nwald differences for the time-fractional case. Root-exponential
-          convergence, Fr&eacute;chet derivatives, and Kronecker-product Jacobians
-          in Newton iteration.</p>
-          <p class="keys">LRPSM &middot; sinc-collocation &middot; WSGD &middot; Kawahara equation</p>
+          <h3>Dynamics of coupled and neural systems</h3>
+          <p>Networks of interacting units in which transmission takes time.
+          Delay-coupled oscillators show synchrony, phase locking, and amplitude
+          death depending on coupling strength and lag, and I am interested in
+          how network structure interacts with those transitions.</p>
+          <p class="keys">delay coupling &middot; synchronisation &middot; neural networks &middot; perturbation theory</p>
         </div>
+
+        <div class="area">
+          <h3>Numerical and analytical methods</h3>
+          <p>Alongside the modelling, work on schemes for equations with memory:
+          sinc-collocation and iterative Laplace transform methods for
+          time-fractional partial integro-differential equations with weakly
+          singular kernels, together with the convergence analysis.</p>
+          <p class="keys">sinc-collocation &middot; Laplace transform methods &middot; fractional operators &middot; convergence analysis</p>
+        </div>
+
       </div>
     </section>
 
     <section class="row">
-      <div class="margin">Collaboration</div>
+      <div class="margin">Students</div>
       <div class="column">
-        <p>I am glad to hear from students and colleagues working on fractional
-        modelling or spectral methods. Graduate students at JUST interested in
-        a thesis in these areas are welcome to get in touch.</p>
+        <p>I supervise undergraduate projects and graduate theses in
+        mathematical biology and dynamical systems. If you are a student at JUST
+        and something on this page interests you, send me a short email saying
+        which part and why.</p>
       </div>
     </section>
 
@@ -98,8 +111,8 @@
 
 <footer class="foot">
   <div class="wrap">
-    <span>&copy; 2026 Firstname Lastname</span>
-    <span>Department of Mathematics and Statistics &middot; JUST</span>
+    <span>&copy; 2026 Isam Al-Darabsah</span>
+    <span>Mathematics and Statistics &middot; JUST &middot; Irbid</span>
   </div>
 </footer>
 
