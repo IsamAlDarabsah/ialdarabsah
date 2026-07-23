@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Firstname Lastname</title>
+<meta name="description" content="Fractional dynamical systems, mathematical biology, numerical analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$','$'], ['\\(','\\)']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="mark" href="index.html">Firstname Lastname</a>
+    <nav class="topnav">
+      <a href="index.html">About</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="row">
+      <div class="margin">Overview</div>
+      <div class="column">
+        <h2>Research</h2>
+        <p class="lede">Three strands, with a common thread: what happens to a
+        dynamical system when the derivative is replaced by a non-local
+        operator, and how to compute the answer reliably.</p>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="margin">01<span class="sub">ongoing</span></div>
+      <div class="column">
+        <div class="area">
+          <h3>Fractional eco-epidemiological systems</h3>
+          <p>Caputo-derivative predator&ndash;prey models carrying two competing
+          disease strains in the prey population, with a generalised Holling
+          response and herd-behaviour exponent $k$. The analysis covers
+          positivity and boundedness, classification of strain-specific and
+          coexistence equilibria, basic reproduction numbers
+          $\mathcal{R}_{0,1}$ and $\mathcal{R}_{0,2}$, and local stability via
+          Matignon's condition $|\arg(\lambda)| > \alpha\pi/2$. The open
+          problem I keep returning to is the non-Lipschitz singularity at the
+          origin when $0 &lt; k &lt; 1$.</p>
+          <p class="keys">Caputo derivative &middot; Matignon condition &middot; Mittag-Leffler decay &middot; strain competition</p>
+        </div>
+
+        <div class="area">
+          <h3>Tumour&ndash;immune&ndash;drug reaction&ndash;diffusion models</h3>
+          <p>A two-dimensional spatial Caputo model coupling tumour, effector
+          immune, and drug concentrations. Work here covers nondimensionalisation,
+          L1 time-stepping, and the qualitative behaviour of treatment
+          protocols under memory effects.</p>
+          <p class="keys">L1 scheme &middot; nondimensionalisation &middot; oncology</p>
+        </div>
+
+        <div class="area">
+          <h3>Numerical methods for nonlinear PDEs</h3>
+          <p>Laplace residual power series methods for fifth-order
+          Kawahara-type equations with multiple quadratic nonlinearities, and
+          sinc-collocation schemes combined with weighted shifted
+          Gr&uuml;nwald differences for the time-fractional case. Root-exponential
+          convergence, Fr&eacute;chet derivatives, and Kronecker-product Jacobians
+          in Newton iteration.</p>
+          <p class="keys">LRPSM &middot; sinc-collocation &middot; WSGD &middot; Kawahara equation</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="margin">Collaboration</div>
+      <div class="column">
+        <p>I am glad to hear from students and colleagues working on fractional
+        modelling or spectral methods. Graduate students at JUST interested in
+        a thesis in these areas are welcome to get in touch.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; 2026 Firstname Lastname</span>
+    <span>Department of Mathematics and Statistics &middot; JUST</span>
+  </div>
+</footer>
+
+</body>
+</html>
