@@ -12,6 +12,12 @@
   --amber:    #97662F;   /* data labels only           */
   --wash:     #EDF0EC;   /* subtle fills               */
 
+  /* top bar */
+  --bar:      #262E2B;   /* bar background             */
+  --bar-text: #EAEDE9;   /* name + active link         */
+  --bar-dim:  #9BA6A1;   /* inactive links             */
+  --bar-mark: #D6A163;   /* underline on current page  */
+
   --serif: "IBM Plex Serif", Georgia, serif;
   --sans:  "IBM Plex Sans", system-ui, -apple-system, sans-serif;
   --mono:  "IBM Plex Mono", ui-monospace, Menlo, monospace;
@@ -61,13 +67,13 @@ a:hover { border-bottom-color: var(--viridian); }
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid var(--rule);
-  background: rgba(246, 247, 245, 0.88);
-  -webkit-backdrop-filter: saturate(180%) blur(12px);
-  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+  background: rgba(38, 46, 43, 0.92);
+  -webkit-backdrop-filter: saturate(150%) blur(12px);
+  backdrop-filter: saturate(150%) blur(12px);
 }
 @supports not (backdrop-filter: blur(1px)) {
-  .topbar { background: var(--paper); }
+  .topbar { background: var(--bar); }
 }
 .topbar .wrap {
   display: flex;
@@ -83,10 +89,10 @@ a:hover { border-bottom-color: var(--viridian); }
   font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: -0.01em;
-  color: var(--ink);
+  color: var(--bar-text);
   border-bottom: none;
 }
-.mark:hover { color: var(--viridian); }
+.mark:hover { color: #FFFFFF; }
 
 .topnav {
   display: flex;
@@ -97,15 +103,16 @@ a:hover { border-bottom-color: var(--viridian); }
   text-transform: uppercase;
 }
 .topnav a {
-  color: var(--slate);
+  color: var(--bar-dim);
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
 }
-.topnav a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.topnav a:hover { color: var(--bar-text); border-bottom-color: var(--bar-dim); }
 .topnav a[aria-current="page"] {
-  color: var(--ink);
-  border-bottom-color: var(--amber);
+  color: var(--bar-text);
+  border-bottom-color: var(--bar-mark);
 }
+.topbar :focus-visible { outline-color: var(--bar-mark); }
 
 /* ---------- hero ---------- */
 
@@ -120,7 +127,8 @@ a:hover { border-bottom-color: var(--viridian); }
 
 .portrait {
   display: block;
-  width: 100%;
+  width: 7rem;
+  margin-left: auto;
   height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -414,7 +422,7 @@ p { margin: 0 0 1.1rem; }
   .topnav { gap: 1rem; font-size: 0.72rem; }
   .hero { padding-top: 3rem; }
   .hero .wrap { grid-template-columns: 1fr; gap: 1.4rem; }
-  .portrait { width: 96px; margin-top: 0; }
+  .portrait { width: 96px; margin-top: 0; margin-left: 0; }
   .row {
     grid-template-columns: 1fr;
     gap: 0.9rem;
